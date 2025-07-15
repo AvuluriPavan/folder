@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin:0;
+      padding:0;
+    }
+    .restaurant-cards{
+      margin:20px;
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+    }
+    .restaurant-card{
+      width:350px;
+      border-radius:10px;
+      box-shadow:10px 10px 40px;
+    }
+    .restaurant-image{
+      position:relatives;
+    }
+    .restaurant-image.discount{
+      position:absolute;
+      bottom:10px;
+      left:5px;
+      background-color:red;
+      color:white;
+      padding:5px;
+      border-radius:5px
+    }
+    .restaurant-image img{
+      width:100%;
+      height:200px;
+      object-fit:cover;
+      border-radius:10px 10px 0 0;
+    }
+    .restaurant-details{
+      padding:10px;
+    }
+    .group{
+      display:flex;
+      justify-content:space-between;
+      margin:5px 0;
+    }
+    .restaurant-name{
+      font-weight:600;
+      color:black;
+    }
+    .rating{
+      background-color:green;
+      color:white;
+      font-weight:700;
+      padding:5px;
+      border-radius:5px;
+      text-align:center;
+    }
+  </style>
+</head>
+<body>
+  <div class="restaurant-cards">
+    <div class="restaurant-card">
+      <div class="restaurant.image">
+        <img src="https://tse2.mm.bing.net/th/id/OIP.FPuP3QNkURKQqGMi9VkeZQHaE8?pid=Api&P=0&h=180">
+          <div class="discount">
+             33% off upto 100
+          </div>
+      </div>
+      <div class="restaurant-details">
+        <div class="group">
+          <p class="restaurant-name">SRIDEVI CHICKEN BIRYANI</p>
+          <p class="rating">3.5 &#x2605;</p>
+        </div>
+        <div class="group">
+          <p>dumbiryani,chicken curry,chicken fry</p>
+          <p>&#x20b9 200 for two</p>
+        </div>
+        <div class="group">
+          <p>kanaparthi bustand,ammanabrolu(v)</p>
+          <p>100m</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
